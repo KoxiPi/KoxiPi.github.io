@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shenglong Chen | Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Shenglong Chen, a UBC Cognitive Systems graduate specializing in distributed systems, heuristic search, and production-minded software engineering."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section reveal">
+          <div class="hero-copy">
+            <h1>Shenglong Chen</h1>
+            <p class="hero-text">
+              Full-stack engineering, distributed systems, and practical machine learning.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="assets/Shenglong_Chen_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/chenshenglong" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button button-secondary" href="https://github.com/KoxiPi" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="about">
+          <div class="section-heading">
+            <h2>About Me</h2>
+          </div>
+          <div class="about-grid">
+            <article class="surface">
+              <p>
+                I am based in Vancouver, BC and open to relocation. My work is
+                shaped by a strong interest in scalable software, modular
+                architecture, and systems that remain understandable under
+                pressure.
+              </p>
+              <p>
+                I care deeply about SOLID design, test-driven development, and
+                cloud-ready workflows. Whether I am building a data pipeline, a
+                backend API, or an interview-ready desktop app, I aim to make
+                the core ideas visible in both the code and the product.
+              </p>
+            </article>
+            <article class="surface skill-surface">
+              <h3>Core strengths</h3>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>Flask</li>
+                <li>FastAPI</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>GitHub Actions</li>
+                <li>Scikit-Learn</li>
+                <li>Heuristic Search</li>
+                <li>Microservices</li>
+                <li>JUnit 5</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="experience">
+          <div class="section-heading">
+            <h2>Work Experience</h2>
+          </div>
+          <article class="timeline-item surface">
+            <div class="timeline-meta">
+              <p>Simon Fraser University</p>
+              <span>May 2025 - Oct 2025</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Machine Learning Research Assistant</h3>
+              <p>
+                Built scalable data extraction and feature engineering workflows
+                for financial and regulatory analysis, with an emphasis on
+                performance, reliability, and publishable research outcomes.
+              </p>
+              <ul class="timeline-list">
+                <li>Structured 10k+ financial records into production-ready datasets for downstream modeling.</li>
+                <li>Used multiprocessing and concurrent futures in Python to remove I/O bottlenecks and improve ingestion speed by 4x.</li>
+                <li>Developed regression-driven analysis pipelines that supported regulatory trend detection at a 95% confidence interval.</li>
+                <li>Designed normalized PostgreSQL schemas and indexing strategy that reduced query time by 35% on large analytical workloads.</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <div class="section-heading">
+            <h2>Projects</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card surface project-wide">
+              <img src="assets/images/ai-solver-preview.png" alt="AI Heuristic Solver Engine interface preview" />
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span>Java</span>
+                  <span>Swing</span>
+                  <span>Algorithms</span>
+                </div>
+                <h3>AI Heuristic Solver Engine</h3>
+                <div class="project-skill-block" aria-label="Skills used in AI Heuristic Solver Engine">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">Swing</span>
+                  <span class="skill-pill">Heuristic Search</span>
+                  <span class="skill-pill">Backtracking</span>
+                  <span class="skill-pill">Memoization</span>
+                  <span class="skill-pill">OOP</span>
+                  <span class="skill-pill">Strategy</span>
+                  <span class="skill-pill">Observer</span>
+                </div>
+                <p>
+                  A performance-focused N-Queens solver that combines recursive
+                  backtracking, heuristic pruning, memoization, and bitmask state
+                  encoding inside a responsive desktop UI.
+                </p>
+                <ul>
+                  <li>Reduced search time by roughly 60% through custom move ordering and pruning logic.</li>
+                  <li>Used Strategy and Observer patterns to keep the solver runtime-swappable and the UI decoupled.</li>
+                  <li>Exposed live metrics so optimization gains are visible during demos and interviews.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/KoxiPi/AI-Heuristic-Solver-Engine" target="_blank" rel="noreferrer">View Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card surface project-wide">
+              <img src="assets/images/pet-shelter-application-preview.png" alt="Pet Shelter Application dashboard preview" />
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span>Java</span>
+                  <span>Swing</span>
+                  <span>Desktop UI</span>
+                  <span>Persistence</span>
+                </div>
+                <h3>Pet Shelter Application</h3>
+                <div class="project-skill-block" aria-label="Skills used in Pet Shelter Application">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">Swing</span>
+                  <span class="skill-pill">Desktop UI</span>
+                  <span class="skill-pill">Persistence</span>
+                  <span class="skill-pill">Java NIO</span>
+                  <span class="skill-pill">Properties</span>
+                  <span class="skill-pill">Testing</span>
+                  <span class="skill-pill">UX Flows</span>
+                </div>
+                <p>
+                  A polished Java desktop dashboard for shelter intake, adoption
+                  tracking, and persistent local record management, rebuilt from
+                  scratch with cleaner architecture and a more production-minded
+                  operator workflow.
+                </p>
+                <ul>
+                  <li>Built snapshot-driven pet management flows with dedicated update dialogs, image previews, and operator-friendly intake actions.</li>
+                  <li>Implemented internal image management so selected pet photos are copied into the application data folder instead of relying on fragile desktop paths.</li>
+                  <li>Added user-selected import/export flows with file validation, confirmation prompts, and smoke tests covering service logic and persistence behavior.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/KoxiPi/Pet-Shelter-Application" target="_blank" rel="noreferrer">View Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card surface project-left">
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>Docker</span>
+                </div>
+                <h3>Distributed RESTful Task Microservice</h3>
+                <div class="project-skill-block" aria-label="Skills used in Distributed RESTful Task Microservice">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">Flask</span>
+                  <span class="skill-pill">PostgreSQL</span>
+                  <span class="skill-pill">Docker</span>
+                  <span class="skill-pill">SQLAlchemy</span>
+                  <span class="skill-pill">JWT</span>
+                  <span class="skill-pill">Pytest</span>
+                  <span class="skill-pill">GitHub Actions</span>
+                  <span class="skill-pill">Microservices</span>
+                </div>
+                <p>
+                  A containerized task API built with Flask, PostgreSQL, Docker
+                  Compose, and GitHub Actions to demonstrate secure,
+                  production-minded backend fundamentals.
+                </p>
+                <ul>
+                  <li>Implemented JWT authentication with Bcrypt-hashed credentials and user-scoped CRUD flows.</li>
+                  <li>Automated checks with Pytest, Ruff, and CI pipelines for safer merges.</li>
+                  <li>Designed for 200+ concurrent requests with sub-150ms tail latency goals.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/KoxiPi/distributed-task-microservice" target="_blank" rel="noreferrer">View Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card surface project-left">
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span>Java</span>
+                  <span>SQL</span>
+                  <span>AWS</span>
+                </div>
+                <h3>Cloud-Ready Management Platform</h3>
+                <div class="project-skill-block" aria-label="Skills used in Cloud-Ready Management Platform">
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">SQL</span>
+                  <span class="skill-pill">JDBC</span>
+                  <span class="skill-pill">JUnit 5</span>
+                  <span class="skill-pill">AWS</span>
+                  <span class="skill-pill">CRUD</span>
+                  <span class="skill-pill">Transactions</span>
+                  <span class="skill-pill">Schema Design</span>
+                </div>
+                <p>
+                  A CRUD-oriented management system with relational schema
+                  design, transaction-aware operations, and JUnit-backed
+                  validation for edge-case-heavy workflows.
+                </p>
+                <ul>
+                  <li>Created a custom JDBC persistence layer with clear separation between domain, repository, and service concerns.</li>
+                  <li>Used constraints and triggers to enforce integrity across multi-entity relationships.</li>
+                  <li>Wrote 50+ tests that surfaced and resolved critical integration edge cases before final delivery.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/KoxiPi/Cloud-Ready-Management-Platform" target="_blank" rel="noreferrer">View Repository</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card surface portrait-card project-right">
+              <div class="project-media project-video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/LMwMyqVCKbk"
+                  title="Arduino Robot demo video"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="project-copy">
+                <div class="project-topline">
+                  <span>Arduino</span>
+                  <span>Embedded Systems</span>
+                  <span>Robotics</span>
+                </div>
+                <h3>Arduino Robot</h3>
+                <div class="project-skill-block" aria-label="Skills used in Arduino Robot">
+                  <span class="skill-pill">Arduino C/C++</span>
+                  <span class="skill-pill">Embedded Control</span>
+                  <span class="skill-pill">Line Following</span>
+                  <span class="skill-pill">Wall Following</span>
+                  <span class="skill-pill">Maze Solving</span>
+                  <span class="skill-pill">Ultrasonic Sensors</span>
+                  <span class="skill-pill">Infrared Sensors</span>
+                  <span class="skill-pill">Motor Drivers</span>
+                  <span class="skill-pill">Calibration</span>
+                </div>
+                <p>
+                  Programmed a sensor-driven autonomous robot using Arduino
+                  C/C++, implementing line-following, wall-following, and
+                  maze-solving behaviors through real-time embedded control
+                  logic.
+                </p>
+                <ul>
+                  <li>Integrated ultrasonic and infrared sensors with motor drivers for reliable navigation in dynamic conditions.</li>
+                  <li>Optimized feedback loops to improve stability and reduce response latency during live movement.</li>
+                  <li>Improved performance through iterative debugging, hardware calibration, and repeated real-world testing.</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://www.youtube.com/shorts/LMwMyqVCKbk" target="_blank" rel="noreferrer">Watch Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="contact">
+          <div class="contact-panel surface">
+            <div>
+              <h2>Let's connect.</h2>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:shenglongcc@gmail.com">
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                <span>shenglongcc@gmail.com</span>
+              </a>
+              <a href="tel:+12368658887">
+                <span class="contact-icon" aria-hidden="true">✆</span>
+                <span>+1 236 865 8887</span>
+              </a>
+              <a href="https://www.linkedin.com/in/chenshenglong" target="_blank" rel="noreferrer">
+                <span class="contact-icon" aria-hidden="true">in</span>
+                <span>linkedin.com/in/chenshenglong</span>
+              </a>
+              <a href="https://github.com/KoxiPi" target="_blank" rel="noreferrer">
+                <span class="contact-icon" aria-hidden="true">GH</span>
+                <span>github.com/KoxiPi</span>
+              </a>
+              <span>Vancouver, BC · Open to relocation</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© <span id="year"></span> Shenglong Chen</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
