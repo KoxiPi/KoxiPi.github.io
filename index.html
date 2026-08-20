@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shenglong Chen | Full-Stack & AI Engineer</title>
+    <title>Shenglong Chen | ML &amp; Software Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Shenglong Chen, a full-stack and AI engineer building distributed systems, intelligent products, and production-ready machine learning workflows."
+      content="Portfolio of Shenglong Chen, an ML and software engineer building distributed systems, intelligent products, and production-ready machine learning workflows."
     />
+    <meta name="theme-color" content="#080b12" />
+    <meta property="og:title" content="Shenglong Chen | ML &amp; Software Engineer" />
+    <meta property="og:description" content="ML and software engineer building reliable systems and intelligent products." />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,55 +20,77 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="bg-orb orb-a"></div>
     <div class="bg-orb orb-b"></div>
     <div class="bg-grid" aria-hidden="true"></div>
 
     <div class="page-shell">
       <header class="site-header">
-        <a class="wordmark" href="#top">Shenglong Chen</a>
+        <a class="wordmark" href="#top" aria-label="Shenglong Chen, back to top">
+          <span class="wordmark-mark" aria-hidden="true">SC</span>
+          <span>Shenglong Chen</span>
+        </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
-      <main id="top">
-        <section class="hero section reveal">
-          <div class="hero-copy">
-            <h1>Shenglong Chen</h1>
-            <p class="hero-text">
-              Full-stack and AI engineer building distributed systems, intelligent
-              products, and production-ready machine learning workflows.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="assets/Shenglong_Chen_Resume.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-              <a class="button button-secondary" href="https://www.linkedin.com/in/chenshenglong" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="button button-secondary" href="https://github.com/KoxiPi" target="_blank" rel="noreferrer">GitHub</a>
+      <main id="main-content">
+        <section class="hero section reveal" aria-labelledby="hero-name">
+          <div class="hero-card">
+            <div class="hero-profile">
+              <div class="portrait-frame">
+                <img src="assets/images/shenglong-chen.jpg" alt="Portrait of Shenglong Chen" width="1024" height="1536" fetchpriority="high" />
+              </div>
+              <div class="hero-socials" aria-label="Contact Shenglong Chen">
+                <a href="mailto:shenglongcc@gmail.com" aria-label="Email Shenglong Chen"><span aria-hidden="true">✉</span></a>
+                <a href="https://www.linkedin.com/in/chenshenglong" target="_blank" rel="noreferrer" aria-label="Shenglong Chen on LinkedIn"><span aria-hidden="true">in</span></a>
+                <a href="https://github.com/KoxiPi" target="_blank" rel="noreferrer" aria-label="Shenglong Chen on GitHub"><span aria-hidden="true">GH</span></a>
+              </div>
+            </div>
+            <div class="hero-copy">
+              <div class="availability"><span aria-hidden="true"></span> Open to software engineering opportunities</div>
+              <h1 id="hero-name">Shenglong Chen</h1>
+              <p class="hero-role">ML &amp; Software Engineer</p>
+              <p class="hero-text">
+                Product-minded software engineer with experience building scalable backend systems,
+                distributed data pipelines, and reliable cloud applications.
+              </p>
+              <p class="hero-text hero-text-secondary">
+                I enjoy turning complex engineering problems into clear, maintainable products
+                that perform reliably under real-world workloads.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+                <a class="button button-secondary" href="assets/Shenglong_Chen_Resume.pdf" target="_blank" rel="noreferrer">View résumé <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </div>
         </section>
 
         <section class="section reveal" id="about">
           <div class="section-heading">
+            <p class="section-kicker">01 / Profile</p>
             <h2>About Me</h2>
           </div>
           <div class="about-grid">
             <article class="surface">
               <p>
-                I am based in Vancouver, BC and open to relocation. My work is
-                shaped by a strong interest in scalable software, modular
-                architecture, and systems that remain understandable under
-                pressure.
+                I am a Vancouver-based software engineer and UBC Cognitive Systems
+                graduate focused on backend engineering, distributed systems, and
+                cloud infrastructure. I am open to relocation.
               </p>
               <p>
-                I care deeply about SOLID design, test-driven development, and
-                cloud-ready workflows. Whether I am building a data pipeline, a
-                backend API, or an interview-ready desktop app, I aim to make
-                the core ideas visible in both the code and the product.
+                I care about modular architecture, test-driven development, and
+                production-ready workflows. Whether I am building an API, an
+                asynchronous job system, or a serverless data pipeline, I aim to
+                make reliability and performance visible in the product.
               </p>
             </article>
             <article class="surface skill-surface">
@@ -74,14 +100,14 @@
                 <li>Java</li>
                 <li>Flask</li>
                 <li>FastAPI</li>
+                <li>Spring Boot</li>
                 <li>PostgreSQL</li>
+                <li>Redis</li>
                 <li>Docker</li>
                 <li>AWS</li>
                 <li>GitHub Actions</li>
-                <li>Scikit-Learn</li>
-                <li>Heuristic Search</li>
-                <li>Microservices</li>
-                <li>JUnit 5</li>
+                <li>Distributed Systems</li>
+                <li>CI/CD</li>
               </ul>
             </article>
           </div>
@@ -89,6 +115,7 @@
 
         <section class="section reveal" id="experience">
           <div class="section-heading">
+            <p class="section-kicker">02 / Experience</p>
             <h2>Work Experience</h2>
           </div>
           <article class="timeline-item surface">
@@ -97,17 +124,17 @@
               <span>May 2025 - Oct 2025</span>
             </div>
             <div class="timeline-content">
-              <h3>Machine Learning Research Assistant</h3>
+              <h3>Machine Learning Engineering Intern <span class="role-note">(Software Engineering)</span></h3>
               <p>
-                Built scalable data extraction and feature engineering workflows
-                for financial and regulatory analysis, with an emphasis on
-                performance, reliability, and publishable research outcomes.
+                Built and integrated scalable backend data workflows for financial
+                analysis, with an emphasis on throughput, database performance,
+                reliability, and collaborative software delivery.
               </p>
               <ul class="timeline-list">
-                <li>Structured 10k+ financial records into production-ready datasets for downstream modeling.</li>
-                <li>Used multiprocessing and concurrent futures in Python to remove I/O bottlenecks and improve ingestion speed by 4x.</li>
-                <li>Developed regression-driven analysis pipelines that supported regulatory trend detection at a 95% confidence interval.</li>
-                <li>Designed normalized PostgreSQL schemas and indexing strategy that reduced query time by 35% on large analytical workloads.</li>
+                <li>Designed Python data pipelines to ingest, clean, and transform 10K+ financial records.</li>
+                <li>Improved throughput by 4x using multiprocessing and optimized I/O handling.</li>
+                <li>Reduced PostgreSQL execution time by 35% through indexing, execution-plan analysis, and load testing.</li>
+                <li>Contributed to API design, code reviews, and iterative delivery in Agile development cycles.</li>
               </ul>
             </div>
           </article>
@@ -115,6 +142,7 @@
 
         <section class="section reveal" id="projects">
           <div class="section-heading">
+            <p class="section-kicker">03 / Selected work</p>
             <h2>Projects</h2>
           </div>
           <div class="project-grid">
@@ -281,10 +309,37 @@
           </div>
         </section>
 
+        <section class="section reveal" id="certifications">
+          <div class="section-heading">
+            <p class="section-kicker">04 / Credentials</p>
+            <h2>Certifications</h2>
+          </div>
+          <div class="certification-grid">
+            <article class="certification-card surface">
+              <div class="certification-mark" aria-hidden="true">AWS</div>
+              <div>
+                <p class="certification-label">Amazon Web Services</p>
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <p>Issued May 2026</p>
+              </div>
+            </article>
+            <article class="certification-card surface">
+              <div class="certification-mark" aria-hidden="true">AWS</div>
+              <div>
+                <p class="certification-label">Amazon Web Services</p>
+                <h3>AWS Certified Solutions Architect – Associate</h3>
+                <p>Issued July 2026</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="section reveal" id="contact">
           <div class="contact-panel surface">
             <div>
+              <p class="section-kicker">05 / Contact</p>
               <h2>Let's connect.</h2>
+              <p class="contact-intro">Have a role, project, or interesting technical problem in mind? I'd love to hear about it.</p>
             </div>
             <div class="contact-links">
               <a href="mailto:shenglongcc@gmail.com">
@@ -307,6 +362,7 @@
 
       <footer class="site-footer">
         <span>&copy; <span id="year"></span> Shenglong Chen</span>
+        <a href="#main-content">Back to top <span aria-hidden="true">↑</span></a>
       </footer>
     </div>
 
