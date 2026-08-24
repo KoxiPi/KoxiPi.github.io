@@ -244,8 +244,6 @@ h3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); letter-spacing: -0.035em; }
 
 .button:hover { transform: translateY(-3px); }
 .button-primary { color: #091008; background: var(--accent); font-weight: 700; }
-.button-secondary { border-color: var(--line-strong); background: rgba(255, 255, 255, 0.04); }
-.button-secondary:hover { border-color: var(--accent); }
 
 .hero-profile { display: grid; justify-items: center; gap: 24px; }
 .hero-copy { text-align: center; }
@@ -286,6 +284,11 @@ h3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); letter-spacing: -0.035em; }
   color: var(--accent);
   border-color: var(--accent);
   transform: translateY(-2px);
+}
+
+.hero-socials i {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .surface, .contact-panel, .project-card {
@@ -393,22 +396,25 @@ h3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); letter-spacing: -0.035em; }
 .certification-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 22px;
-  align-items: start;
+  gap: 28px;
+  align-items: center;
 }
 
 .certification-mark {
   display: grid;
-  width: 64px;
-  height: 64px;
+  width: 116px;
+  height: 116px;
   place-items: center;
-  border: 1px solid rgba(201, 255, 99, 0.28);
-  border-radius: 18px;
-  color: var(--accent);
-  background: var(--accent-soft);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.85rem;
-  font-weight: 700;
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.certification-mark i {
+  font-size: 4rem;
+  line-height: 1;
+  transform: translateY(-1px);
 }
 
 .certification-card h3 {
@@ -447,6 +453,8 @@ h3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); letter-spacing: -0.035em; }
   font-size: 0.72rem;
 }
 
+.contact-icon i { font-size: 0.86rem; line-height: 1; }
+
 .site-footer { padding: 24px 4px 38px; color: var(--muted); font-size: 0.72rem; }
 .site-footer a:hover { color: var(--accent); }
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity 650ms ease, transform 650ms ease; }
@@ -483,7 +491,9 @@ h3 { font-size: clamp(1.5rem, 2.5vw, 2.35rem); letter-spacing: -0.035em; }
   .site-header { padding: 8px; }
   .wordmark-mark { width: 34px; height: 34px; }
   .site-nav a { padding-inline: 7px; font-size: 0.7rem; }
-  .certification-card { grid-template-columns: 1fr; }
+  .certification-card { grid-template-columns: 1fr; gap: 20px; }
+  .certification-mark { width: 88px; height: 88px; border-radius: 20px; }
+  .certification-mark i { font-size: 3rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
