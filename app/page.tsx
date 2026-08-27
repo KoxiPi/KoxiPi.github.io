@@ -221,7 +221,7 @@ export default function Home() {
           <div><p className="section-kicker">04 · Toolkit</p><h2>Skills, organized by how I build.</h2></div>
         </div>
         <div className="skills-grid">
-          {skillGroups.map((group, index) => <article className="skill-card surface" key={group.name}><div><span>0{index + 1}</span><small>{group.hint}</small></div><h3>{group.name}</h3><ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul></article>)}
+          {skillGroups.map((group) => <article className="skill-card surface" key={group.name}><h3>{group.name}</h3><ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul></article>)}
         </div>
         <div className="credential-strip surface"><div><span>✓</span><p><small>AWS CERTIFIED</small>Cloud Practitioner</p></div><div><span>✓</span><p><small>AWS CERTIFIED</small>Solutions Architect — Associate</p></div><p>Cloud concepts backed by hands-on engineering.</p></div>
       </section>
