@@ -203,9 +203,9 @@ export default function Home() {
               <div className="project-grid">
                 <div className="project-overview"><h3>{project.title}</h3><p>{project.summary}</p><div className="tag-row">{project.tech.map((tech) => <span key={tech}>{tech}</span>)}</div></div>
                 <div className={`project-diagram diagram-${project.kind}`} aria-hidden="true">
-                  <span className="diagram-label label-a">{project.kind === 'robot' ? 'Sensors' : project.kind === 'ai' ? 'State' : project.kind === 'desktop' ? 'Intake' : project.kind === 'game' ? 'Tableau' : 'Client'}</span>
-                  <span className="diagram-label label-b">{project.kind === 'robot' ? 'Logic' : project.kind === 'ai' ? 'Search' : project.kind === 'cloud' ? 'Service' : project.kind === 'desktop' ? 'Records' : project.kind === 'game' ? 'Rules' : 'API'}</span>
-                  <span className="diagram-label label-c">{project.kind === 'robot' ? 'Motion' : project.kind === 'ai' ? 'Solution' : project.kind === 'cloud' ? 'Data' : project.kind === 'desktop' ? 'Storage' : project.kind === 'game' ? 'Solver' : 'Database'}</span>
+                  <span className="diagram-label label-a">{project.kind === 'robot' ? 'Sensors' : project.kind === 'ai' ? 'State' : project.kind === 'desktop' ? 'Intake' : project.kind === 'game' ? 'Input / AI' : 'Client'}</span>
+                  <span className="diagram-label label-b">{project.kind === 'robot' ? 'Logic' : project.kind === 'ai' ? 'Search' : project.kind === 'cloud' ? 'Service' : project.kind === 'desktop' ? 'Records' : project.kind === 'game' ? 'Game Logic' : 'API'}</span>
+                  <span className="diagram-label label-c">{project.kind === 'robot' ? 'Motion' : project.kind === 'ai' ? 'Solution' : project.kind === 'cloud' ? 'Data' : project.kind === 'desktop' ? 'Storage' : project.kind === 'game' ? 'Game State' : 'Database'}</span>
                   <i/><i/><b className="diagram-pulse"/>
                 </div>
               </div>
