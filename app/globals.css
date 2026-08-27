@@ -142,7 +142,7 @@ h1 { max-width:650px; margin:0; font-size:clamp(54px,6.4vw,88px); line-height:.9
 .project-diagram>i:nth-of-type(2) { left:calc(50% + 38px); width:calc(42% - 74px); }
 .diagram-pulse { position:absolute; top:108px; left:calc(8% + 74px); width:5px; height:5px; border-radius:50%; background:#86dacc; box-shadow:0 0 10px #73e6d1; animation:diagramFlow 3s linear infinite; }
 @keyframes diagramFlow{0%{left:calc(8% + 74px)}44%{left:calc(50% - 2px)}50%{left:calc(50% + 38px)}100%{left:calc(92% - 80px)}}
-.diagram-ai .diagram-label { border-color:rgba(154,130,231,.25); }.diagram-ai .diagram-pulse{background:#a893e8;box-shadow:0 0 10px #8f7bd7}.diagram-robot .diagram-label{border-color:rgba(227,167,97,.22)}
+.diagram-ai .diagram-label { border-color:rgba(154,130,231,.25); }.diagram-ai .diagram-pulse{background:#a893e8;box-shadow:0 0 10px #8f7bd7}.diagram-desktop .diagram-label{border-color:rgba(100,190,214,.24)}.diagram-desktop .diagram-pulse{background:#69bfd4;box-shadow:0 0 10px #58aabd}.diagram-game .diagram-label{border-color:rgba(212,128,157,.24)}.diagram-game .diagram-pulse{background:#d886a3;box-shadow:0 0 10px #c67291}.diagram-robot .diagram-label{border-color:rgba(227,167,97,.22)}
 .project-details { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); }
 .project-details div { padding:26px 25px 16px 0; }
 .project-details div+div { padding-left:25px; border-left:1px solid var(--line); }
