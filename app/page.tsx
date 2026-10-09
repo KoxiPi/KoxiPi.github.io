@@ -4,7 +4,17 @@ import { useEffect, useState } from 'react';
 
 const projects = [
   {
-    index: '01', title: 'Distributed RESTful Task Microservice', eyebrow: 'Backend · Distributed Systems',
+    index: '01', title: 'Asynchronous Job Processing System', eyebrow: 'Backend · Reliability · Load Testing',
+    summary: 'A distributed backend for asynchronous job execution, built with Redis priority queues, worker pools, and PostgreSQL persistence.',
+    problem: 'Background jobs need to survive worker failures and duplicate submissions while keeping retries and scheduling predictable under load.',
+    solution: 'Implemented retries, idempotent job submission, dead-letter handling, rate limiting, and weighted priority scheduling, with structured logs and Prometheus metrics for queue depth and job latency.',
+    challenge: 'Managing worker parallelism and pooled database connections under load while recovering interrupted jobs and preventing stale workers from overwriting results.',
+    impact: 'Measured 284–291 completed jobs/sec with 500–1,500 concurrent virtual users and 0% HTTP request failures in 60-second k6 tests of simulated 100 ms jobs.',
+    tech: ['Python', 'FastAPI', 'Redis', 'PostgreSQL', 'Docker', 'k6', 'Prometheus', 'GitHub Actions'],
+    href: 'https://github.com/KoxiPi/async-job-system', kind: 'async'
+  },
+  {
+    index: '02', title: 'Distributed RESTful Task Microservice', eyebrow: 'Backend · Distributed Systems',
     summary: 'A containerized, production-minded task API designed around secure ownership, predictable latency, and safe delivery.',
     problem: 'Task services need to remain secure and dependable as concurrent traffic and deployment complexity grow.',
     solution: 'Built user-scoped CRUD flows with JWT authentication, PostgreSQL persistence, containerized environments, automated tests, linting, and CI.',
@@ -14,7 +24,7 @@ const projects = [
     href: 'https://github.com/KoxiPi/distributed-task-microservice', kind: 'queue'
   },
   {
-    index: '02', title: 'Cloud-Ready Management Platform', eyebrow: 'Cloud · Data Architecture',
+    index: '03', title: 'Cloud-Ready Management Platform', eyebrow: 'Cloud · Data Architecture',
     summary: 'A transaction-aware Java management system built to keep complex relational workflows correct, testable, and cloud ready.',
     problem: 'Multi-entity operations create fragile edge cases when domain rules and data integrity live in the wrong layer.',
     solution: 'Separated domain, repository, and service concerns through a custom JDBC persistence layer, database constraints, and triggers.',
@@ -24,7 +34,7 @@ const projects = [
     href: 'https://github.com/KoxiPi/Cloud-Ready-Management-Platform', kind: 'cloud'
   },
   {
-    index: '03', title: 'Autonomous Arduino Robot', eyebrow: 'Robotics · Embedded Systems',
+    index: '04', title: 'Autonomous Arduino Robot', eyebrow: 'Robotics · Embedded Systems',
     summary: 'Software meeting the physical world: a sensor-driven robot built to navigate changing, imperfect environments.',
     problem: 'Reliable motion requires interpreting noisy sensors and correcting behavior in real time.',
     solution: 'Integrated ultrasonic and infrared sensors with motor drivers for line following, wall following, and maze solving.',
@@ -34,7 +44,7 @@ const projects = [
     href: 'https://www.youtube.com/shorts/LMwMyqVCKbk', kind: 'robot'
   },
   {
-    index: '04', title: 'AI Heuristic Solver Engine', eyebrow: 'Algorithms · Intelligent Systems',
+    index: '05', title: 'AI Heuristic Solver Engine', eyebrow: 'Algorithms · Intelligent Systems',
     summary: 'A performance-focused N-Queens solver that combines advanced search techniques with a responsive desktop interface.',
     problem: 'Naive search becomes impractical as the board grows and blocks the interface during long-running work.',
     solution: 'Combined recursive backtracking, heuristic pruning, memoization, and bitmask state encoding with a decoupled runtime UI.',
@@ -44,7 +54,7 @@ const projects = [
     href: 'https://github.com/KoxiPi/AI-Heuristic-Solver-Engine', kind: 'ai'
   },
   {
-    index: '05', title: 'Pet Shelter Application', eyebrow: 'Desktop · Product Engineering',
+    index: '06', title: 'Pet Shelter Application', eyebrow: 'Desktop · Product Engineering',
     summary: 'A polished Java desktop dashboard for shelter intake, adoption tracking, and persistent local record management.',
     problem: 'Shelter staff need a dependable way to manage pets, images, and records without fragile file paths or confusing operator flows.',
     solution: 'Built snapshot-driven management flows, dedicated update dialogs, image previews, internal image storage, and validated import/export actions.',
@@ -54,7 +64,7 @@ const projects = [
     href: 'https://github.com/KoxiPi/Pet-Shelter-Application', kind: 'desktop'
   },
   {
-    index: '06', title: 'Spider Solitaire', eyebrow: 'Functional Programming · Game AI',
+    index: '07', title: 'Spider Solitaire', eyebrow: 'Functional Programming · Game AI',
     summary: 'A one-suit Spider Solitaire desktop game built in Haskell with a responsive card interface and heuristic auto-solver.',
     problem: 'A playable solitaire engine must keep card movement, reserve deals, completed runs, and win conditions consistent across every interaction.',
     solution: 'Modeled immutable game state and rule-driven transitions, then added move hints and a heuristic search that can apply a full solution.',
@@ -203,9 +213,9 @@ export default function Home() {
               <div className="project-grid">
                 <div className="project-overview"><h3>{project.title}</h3><p>{project.summary}</p><div className="tag-row">{project.tech.map((tech) => <span key={tech}>{tech}</span>)}</div></div>
                 <div className={`project-diagram diagram-${project.kind}`} aria-hidden="true">
-                  <span className="diagram-label label-a">{project.kind === 'robot' ? 'Sensors' : project.kind === 'ai' ? 'State' : project.kind === 'desktop' ? 'Intake' : project.kind === 'game' ? 'Input / AI' : 'Client'}</span>
-                  <span className="diagram-label label-b">{project.kind === 'robot' ? 'Logic' : project.kind === 'ai' ? 'Search' : project.kind === 'cloud' ? 'Service' : project.kind === 'desktop' ? 'Records' : project.kind === 'game' ? 'Game Logic' : 'API'}</span>
-                  <span className="diagram-label label-c">{project.kind === 'robot' ? 'Motion' : project.kind === 'ai' ? 'Solution' : project.kind === 'cloud' ? 'Data' : project.kind === 'desktop' ? 'Storage' : project.kind === 'game' ? 'Game State' : 'Database'}</span>
+                  <span className="diagram-label label-a">{project.kind === 'async' ? 'FastAPI' : project.kind === 'robot' ? 'Sensors' : project.kind === 'ai' ? 'State' : project.kind === 'desktop' ? 'Intake' : project.kind === 'game' ? 'Input / AI' : 'Client'}</span>
+                  <span className="diagram-label label-b">{project.kind === 'async' ? 'Redis Queue' : project.kind === 'robot' ? 'Logic' : project.kind === 'ai' ? 'Search' : project.kind === 'cloud' ? 'Service' : project.kind === 'desktop' ? 'Records' : project.kind === 'game' ? 'Game Logic' : 'API'}</span>
+                  <span className="diagram-label label-c">{project.kind === 'async' ? 'Workers' : project.kind === 'robot' ? 'Motion' : project.kind === 'ai' ? 'Solution' : project.kind === 'cloud' ? 'Data' : project.kind === 'desktop' ? 'Storage' : project.kind === 'game' ? 'Game State' : 'Database'}</span>
                   <i/><i/><b className="diagram-pulse"/>
                 </div>
               </div>
@@ -239,3 +249,4 @@ export default function Home() {
     </main>
   );
 }
+
